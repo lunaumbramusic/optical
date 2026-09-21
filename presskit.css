@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #ffffff;
+  background-color: #050505;
+  font-family: 'Syne', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Vídeo de fundo do TouchDesigner */
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: brightness(35%) contrast(120%);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.container {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* HEADER COM LOGO LIMPA */
+.hero-clean {
+  text-align: center;
+  padding: 20px 0 10px;
+  width: 100%;
+}
+
+.brand-logo {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 12px rgba(0,0,0,0.9));
+}
+
+/* CARDS TIPO POSTER Y2K */
+.poster-card {
+  position: relative;
+  width: 100%;
+  min-height: 480px;
+  overflow: hidden;
+  border: 1px solid #222222;
+  display: flex;
+  align-items: flex-end;
+  background: #111111;
+}
+
+/* Poster específico para a Tagline (Foto 1) */
+.tagline-poster {
+  min-height: 280px;
+  display: flex;
+  align-items: flex-end; /* Força o alinhamento no fundo */
+  justify-content: flex-start; /* Mantém na esquerda */
+}
+
+/* Base das fotos de fundo */
+.poster-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Classe para fotos em Preto e Branco (Fotos 2 e 3) */
+.poster-bg.bg-bw {
+  filter: grayscale(100%) contrast(130%) brightness(80%);
+}
+
+/* Classe para fotos Coloridas Originais (Fotos 1 e 4) */
+.poster-bg.bg-color {
+  filter: brightness(85%) contrast(110%);
+}
+
+/* Gradiente Escuro para Garantir Leitura */
+.poster-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg, 
+    rgba(0,0,0,0.2) 0%, 
+    rgba(0,0,0,0.7) 60%, 
+    rgba(0,0,0,0.95) 100%
+  );
+  z-index: 2;
+}
+
+.poster-content {
+  position: relative;
+  z-index: 3;
+  padding: 30px 25px;
+  width: 100%;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.tagline {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid #444444;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.8);
+}
+
+/* Tipografia Futurista */
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.9);
+  letter-spacing: -1px;
+}
+
+.highlight-text {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.9);
+}
+
+.body-text {
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #cccccc;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.9);
+}
+
+/* CAIXAS PADRÃO PARA PLAYERS E VÍDEOS */
+.card {
+  background: rgba(12, 12, 12, 0.92);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border: 1px solid #222222;
+  width: 100%;
+}
+
+.card h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #222222;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* VÍDEOS E EMBEDS */
+.video-container {
+  width: 100%;
+  border: 1px solid #333333;
+  margin-top: 5px;
+}
+
+.bandcamp-player iframe {
+  margin-bottom: 10px;
+}
+
+/* BOTÕES DE CONTATO */
+.links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: block;
+  flex: 1;
+  min-width: 160px;
+  padding: 14px;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #cc0000;
+  color: #ffffff;
+}
+
+/* Esconde elementos do idioma inativo */
+[data-lang]:not(.active-lang) {
+  display: none;
+}
+
+.lang-switch {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 999;
+  display: flex;
+  gap: 5px;
+}
+
+.lang-switch button {
+  background: #111;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+}
+
+.lang-switch button.active {
+  background: #fff;
+  color: #000;
+}
+
+/* RESPONSIVO */
+@media (max-width: 500px) {
+  .poster-card {
+    min-height: 420px;
+  }
+
+  .tagline-poster {
+    min-height: 220px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .poster-content {
+    padding: 20px;
+  }
+
+  .tagline {
+    font-size: 0.72rem;
+    padding: 8px 12px;
+  }
+}
