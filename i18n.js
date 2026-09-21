@@ -1,4 +1,5 @@
 const translations={
+'Faixas':'Tracks','7 faixas · 52:56':'7 tracks · 52:56',
 'Assistir no YouTube ↗':'Watch on YouTube ↗',
 'LunaUMBRA em apresentação ao ar livre, diante da pista de dança':'LunaUMBRA performing outdoors in front of the dance floor',
 'Baixar foto do LunaUMBRA ↓':'Download LunaUMBRA photo ↓','Baixar logo do LunaUMBRA ↓':'Download LunaUMBRA logo ↓',
@@ -13,7 +14,7 @@ const translations={
 'Os projetos compartilham uma pesquisa em música eletrônica, com abordagens próprias de composição e construção sonora. O encontro aproxima essas identidades sem apagar suas diferenças.':'Both projects explore electronic music through distinct approaches to composition and sound. Their meeting brings these identities together while preserving their differences.',
 'A experimentação em estúdio, a relação entre repetição e variação e o interesse por estruturas sonoras atravessam esse universo criativo.':'Studio experimentation, the relationship between repetition and variation, and an interest in sonic structures run through this creative practice.',
 'Sobre esta apresentação':'About this presentation',
-'Esta seleção reúne informações dos projetos e três estudos de capa. O texto conceitual definitivo, a história de produção, a seleção de faixas ainda serão incorporados.':'This selection brings together information about the projects and three artwork studies. The final concept text, production story and track selection will be added later.',
+'Esta seleção reúne informações dos projetos e três estudos de capa. O texto conceitual definitivo e a história de produção ainda serão incorporados.':'This selection brings together information about the projects and three artwork studies. The final concept text and production story will be added later.',
 '02 / Os projetos':'02 / The projects',
 'Projeto de música eletrônica autoral de Leo Luna, baseado em Fortaleza. A produção transita entre techno, progressive e sonoridades zenonesque, articulando atmosferas escuras, precisão sonora e impacto físico.':'LunaUMBRA is the original electronic music project of Fortaleza-based artist Leo Luna. Moving between techno, progressive and zenonesque sounds, the music combines dark atmospheres, sonic precision and physical impact.',
 'O estúdio funciona como laboratório de experimentação: sintetizadores, gravação e modulação se tornam ferramentas de descoberta. Música, audiovisual e espaço fazem parte de uma mesma prática de pesquisa.':'The studio is a laboratory for experimentation: synthesizers, recording and modulation become tools for discovery. Music, audiovisual work and space are part of the same creative research.',
